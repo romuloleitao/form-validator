@@ -21,7 +21,7 @@ function showSuccess(input) {
 // Check email is valid
 function checkEmail(input) {
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if(re.test(input.value.trim())) {
+    if (re.test(input.value.trim())) {
         showSuccess(input);
     } else {
         showError(input, "Email is not valid")
